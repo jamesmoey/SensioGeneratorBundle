@@ -92,7 +92,7 @@ class DoctrineFormGenerator extends Generator
      * @param  ClassMetadataInfo $metadata
      * @return array             $fields
      */
-    private function getFieldsFromMetadata(ClassMetadataInfo $metadata)
+    protected function getFieldsFromMetadata(ClassMetadataInfo $metadata)
     {
         $fields = (array) $metadata->fieldNames;
 
